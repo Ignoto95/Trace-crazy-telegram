@@ -1,0 +1,9 @@
+Scaricare python3 o equivalente/oppure controllare la presenza con --version.
+Scaricare e installare pip.
+Su server e locale scaricare LXML e Moduli di telegram-bot-python:
+1 pip install lxml
+2 pip install python-telegram-bot
+3 pip install BeautifulSoup4
+4 pip install telegram-send
+
+Runnare con pip o python3 bot.py
