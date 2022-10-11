@@ -6,7 +6,6 @@ from crazytimemodel import CrazyTimeModel
 class bestwin_sendtext:
 
     def load(bot_message_winbot_message_win):
-        elenco = []
         URL = "https://tracksino.com/crazytime/"
         webpage = requests.get(URL)
         soup = BeautifulSoup(webpage.content , "html.parser")
@@ -29,6 +28,7 @@ class bestwin_sendtext:
         
         send_text = 'I migliori moltiplicatori di oggi sono:' + str(multi_name_1) + ' con il' + str(multipli_1) + 'il' + str(timestamp_1) + str(multi_name_2) + ' con il' + str(multipli_2) + 'il' + str(timestamp_2) + str(multi_name_3) + ' con il' + str(multipli_3) + 'il' + str(timestamp_3)
         
+        request = requests.get(send_text)
         ##res = (dom.xpath('//*[@class="subtitle"]/b/text()'))
         ##indice = (dom.xpath('//*[@class="card-body"]/center/div/div/div/img/@alt'))
         ##lista = dict(zip(indice,res))

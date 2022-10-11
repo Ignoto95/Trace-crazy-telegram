@@ -24,7 +24,8 @@ def start(update, context):
 def help(update, context):
     """Send a message when the command /help is issued."""
     #update.message.reply_text('Ciao! Benvenuto nel gruppo di TraceCrazyTime! Per utilizzare le funzioni ....')
-    telegram_bot_sendtext('Ciao! Benvenuto nel gruppo di TraceCrazyTime! Per utilizzare le funzioni ....')
+    telegram_bot_sendtext(bestwin_sendtext.load)
+    
 def bigwin(update, context):
     """Send a message when the command /help is issued."""
     #update.message.reply_text(bot_message_win)
@@ -62,12 +63,12 @@ def main():
     dp.add_error_handler(error)
     #telegram_bot_sendtext("lollogaio")
     # Start the Bot
-    updater.start_webhook(
-        listen="0.0.0.0",
-        port=int(PORT),
-        url_path=TOKEN,
-        webhook_url='https://pumpkin-cake-34056.herokuapp.com/' + TOKEN
-    )
+    #updater.start_webhook(
+    #    listen="0.0.0.0",
+     #   port=int(PORT),
+     #   url_path=TOKEN,
+    #    webhook_url='https://pumpkin-cake-34056.herokuapp.com/' + TOKEN
+    #
     i = 10
     updater.start_polling()
     #while i > 0 :
