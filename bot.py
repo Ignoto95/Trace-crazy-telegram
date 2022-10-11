@@ -5,6 +5,7 @@ from script import Allert
 from test import telegram_bot_sendtext
 import time
 import telegram_send
+from bestwin import bestwin_sendtext
 PORT = int(os.environ.get('PORT', '8443'))
 # Enable logging
 
@@ -23,6 +24,10 @@ def start(update, context):
 def help(update, context):
     """Send a message when the command /help is issued."""
     update.message.reply_text('Ciao! Benvenuto nel gruppo di TraceCrazyTime! Per utilizzare le funzioni ....')
+    
+def bigwin(update, context):
+    """Send a message when the command /help is issued."""
+    update.message.reply_text(bot_message_win)
 
 #def echo(update, context):
  #   """Echo the user message."""
@@ -46,6 +51,7 @@ def main():
     # on different commands - answer in Telegram
     dp.add_handler(CommandHandler("start", start))
     dp.add_handler(CommandHandler("help", help))
+    dp.add_handler(CommandHandler("bigwin", bigwin))
 
     # on noncommand i.e message - echo the message on Telegram
     #dp.add_handler(MessageHandler("porcodio", echo))
