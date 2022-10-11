@@ -11,19 +11,19 @@ class bestwin_sendtext:
         webpage = requests.get(URL)
         soup = BeautifulSoup(webpage.content , "html.parser")
         dom = etree.HTML(str(soup))
-        multi_name_1 = dom.xpath('//*[@class="gameevents-table table-responsive"/table/tbody/tr[3]/td[2]/text()'))
+        multi_name_1 = (dom.xpath('//*[@class="gameevents-table table-responsive"/table/tbody/tr[3]/td[2]/text()'))
         
-        multi_name_2 = dom.xpath('//*[@class="gameevents-table table-responsive"/table/tbody/tr[3]/td[2]/text()'))
+        multi_name_2 = (dom.xpath('//*[@class="gameevents-table table-responsive"/table/tbody/tr[3]/td[2]/text()'))
         
-        multi_name_3 = dom.xpath('//*[@class="gameevents-table table-responsive"/table/tbody/tr[3]/td[2]/text()'))
+        multi_name_3 = (dom.xpath('//*[@class="gameevents-table table-responsive"/table/tbody/tr[3]/td[2]/text()'))
         
-        multipli_1 = dom.xpath('//*[@class=""wrapper container-fluid""]/div/div[4]/div[1]/div/div/div/div/div[1]/div[1]/span/span/text()'))
-        multipli_2 = dom.xpath('//*[@class=""wrapper container-fluid""]/div/div[4]/div[1]/div/div/div/div/div[2]/div[1]/span/span/text()'))
-        multipli_3 = dom.xpath('//*[@class=""wrapper container-fluid""]/div/div[4]/div[1]/div/div/div/div/div[3]/div[1]/span/span/text()'))
+        multipli_1 = (dom.xpath('//*[@class=""wrapper container-fluid""]/div/div[4]/div[1]/div/div/div/div/div[1]/div[1]/span/span/text()'))
+        multipli_2 = (dom.xpath('//*[@class=""wrapper container-fluid""]/div/div[4]/div[1]/div/div/div/div/div[2]/div[1]/span/span/text()'))
+        multipli_3 = (dom.xpath('//*[@class=""wrapper container-fluid""]/div/div[4]/div[1]/div/div/div/div/div[3]/div[1]/span/span/text()'))
         
-        timestamp_1 = dom.xpath('//*[@class="pt-2 container-fluid"/div[1]/div[2]/text()'))
-        timestamp_2 = dom.xpath('//*[@class="pt-2 container-fluid"/div[2]/div[2]/text()'))
-        timestamp_3 = dom.xpath('//*[@class="pt-2 container-fluid"/div[3]/div[2]/text()'))
+        timestamp_1 = (dom.xpath('//*[@class="pt-2 container-fluid"/div[1]/div[2]/text()'))
+        timestamp_2 = (dom.xpath('//*[@class="pt-2 container-fluid"/div[2]/div[2]/text()'))
+        timestamp_3 = (dom.xpath('//*[@class="pt-2 container-fluid"/div[3]/div[2]/text()'))
         
         
         
