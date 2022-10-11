@@ -23,12 +23,12 @@ def start(update, context):
 
 def help(update, context):
     """Send a message when the command /help is issued."""
-    update.message.reply_text('Ciao! Benvenuto nel gruppo di TraceCrazyTime! Per utilizzare le funzioni ....')
-    
+    #update.message.reply_text('Ciao! Benvenuto nel gruppo di TraceCrazyTime! Per utilizzare le funzioni ....')
+    telegram_bot_sendtext('Ciao! Benvenuto nel gruppo di TraceCrazyTime! Per utilizzare le funzioni ....')
 def bigwin(update, context):
     """Send a message when the command /help is issued."""
-    update.message.reply_text(bot_message_win)
-
+    #update.message.reply_text(bot_message_win)
+    telegram_bot_sendtext(bot_message_win)
 #def echo(update, context):
  #   """Echo the user message."""
  #   update.message.reply_text(update.message.text)
