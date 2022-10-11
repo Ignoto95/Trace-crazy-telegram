@@ -5,7 +5,7 @@ from script import Allert
 from test import telegram_bot_sendtext
 import time
 import telegram_send
-from bestwin import bestwin_sendtext
+from bestwin import load
 PORT = int(os.environ.get('PORT', '8443'))
 # Enable logging
 
@@ -24,7 +24,7 @@ def start(update, context):
 def help(update, context):
     """Send a message when the command /help is issued."""
     #update.message.reply_text('Ciao! Benvenuto nel gruppo di TraceCrazyTime! Per utilizzare le funzioni ....')
-    telegram_bot_sendtext(bestwin_sendtext.load)
+    telegram_bot_sendtext(load())
     
 def bigwin(update, context):
     """Send a message when the command /help is issued."""

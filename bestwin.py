@@ -3,9 +3,9 @@ from bs4 import BeautifulSoup
 import requests
 from crazytimemodel import CrazyTimeModel
 
-class bestwin_sendtext:
+#class bestwin_sendtext:
 
-    def load(bot_message_winbot_message_win):
+    def load():
         URL = "https://tracksino.com/crazytime/"
         webpage = requests.get(URL)
         soup = BeautifulSoup(webpage.content , "html.parser")
